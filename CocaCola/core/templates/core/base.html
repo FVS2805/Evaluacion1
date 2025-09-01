@@ -250,6 +250,13 @@
       {% block content %}{% endblock %}
     </div>
   </main>
+      <!-- Bloque adicional para contenido dinámico -->
+  <div class="bg-light border rounded p-3 mt-4 shadow-sm">
+    {% block secondary_content %}
+    
+    {% endblock %}
+  </div>
+</main>
 
   <!-- Redes sociales arriba del footer -->
   <div class="social-bar">

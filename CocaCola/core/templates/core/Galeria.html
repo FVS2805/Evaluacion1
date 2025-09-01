@@ -29,7 +29,7 @@
 </div>
 
 
-<h2 class="mb-4 text-center">Galería de Imágenes</h2>
+<h2 class="section-title">Galería de Imágenes</h2>
 
 <div class="d-flex flex-wrap justify-content-center gap-3">
   <!-- Miniaturas -->
@@ -47,6 +47,7 @@
 
 </div>
 
+
 <!-- Modal simple -->
 <div class="modal fade" id="lightboxModal" tabindex="-1" aria-hidden="true">
   <div class="modal-dialog modal-dialog-centered modal-lg">
@@ -58,6 +59,8 @@
     </div>
   </div>
 </div>
+
+
 
 <script>
   const modal = document.getElementById('lightboxModal');
@@ -87,6 +90,56 @@
     box-shadow: 0 8px 15px rgba(0,0,0,0.3);
     z-index: 10;
   }
+  .section-title {
+  font-family: 'Arial Black', sans-serif;
+  font-size: 2.2rem;
+  text-align: center;
+  margin-top: 4rem;
+  margin-bottom: 3rem; /* ← Aumentamos el espacio inferior */
+  color: #d42f2f;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  position: relative;
+  padding-bottom: 10px;
+}
+
+.section-title::after {
+  content: '';
+  width: 60px;
+  height: 4px;
+  background-color: #d42f2f;
+  display: block;
+  margin: 10px auto 0;
+  border-radius: 2px;
+}
+
 </style>
 
 {% endblock %}
+
+{% block secondary_content %}
+
+  <h2 class="section-title">Colaboraciones</h2>
+
+<div class="d-flex flex-wrap justify-content-center gap-3">
+  <!-- Miniaturas -->
+  <img src="https://blogs.uninter.edu.mx/ESCAT/wp-content/uploads/2023/11/Coca-Cola-3000.jpg" alt="Imagen 1" class="gallery-img rounded shadow-sm" style="cursor:pointer" data-bs-toggle="modal" data-bs-target="#lightboxModal" data-img="https://blogs.uninter.edu.mx/ESCAT/wp-content/uploads/2023/11/Coca-Cola-3000.jpg">
+
+  <img src="https://blogs.uninter.edu.mx/ESCAT/wp-content/uploads/2023/11/Coca-Cola-Movement.jpg" alt="Imagen 2" class="gallery-img rounded shadow-sm" style="cursor:pointer" data-bs-toggle="modal" data-bs-target="#lightboxModal" data-img="https://blogs.uninter.edu.mx/ESCAT/wp-content/uploads/2023/11/Coca-Cola-Movement.jpg">
+
+  <img src="https://blogs.uninter.edu.mx/ESCAT/wp-content/uploads/2023/10/image-104.png" alt="Imagen 3" class="gallery-img rounded shadow-sm" style="cursor:pointer" data-bs-toggle="modal" data-bs-target="#lightboxModal" data-img="https://blogs.uninter.edu.mx/ESCAT/wp-content/uploads/2023/10/image-104.png">
+
+  <img src="https://blogs.uninter.edu.mx/ESCAT/wp-content/uploads/2023/10/image-105.png" alt="Imagen 4" class="gallery-img rounded shadow-sm" style="cursor:pointer" data-bs-toggle="modal" data-bs-target="#lightboxModal" data-img="https://blogs.uninter.edu.mx/ESCAT/wp-content/uploads/2023/10/image-105.png">
+
+  <img src="https://blogs.uninter.edu.mx/ESCAT/wp-content/uploads/2023/11/Coca-Cola-Soul-Blast.jpg" alt="Imagen 5" class="gallery-img rounded shadow-sm" style="cursor:pointer" data-bs-toggle="modal" data-bs-target="#lightboxModal" data-img="https://blogs.uninter.edu.mx/ESCAT/wp-content/uploads/2023/11/Coca-Cola-Soul-Blast.jpg">
+
+  <img src="https://www.tumusicahoy.com/img/noticias/original/rim47elz.jpg" alt="Imagen 6" class="gallery-img rounded shadow-sm" style="cursor:pointer" data-bs-toggle="modal" data-bs-target="#lightboxModal" data-img="https://www.tumusicahoy.com/img/noticias/original/rim47elz.jpg">
+
+</div>
+
+
+
+
+
+{% endblock %}
+    
