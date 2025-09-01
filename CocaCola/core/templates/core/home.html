@@ -1,0 +1,97 @@
+{% extends 'core/base.html' %}
+
+{% block content %}
+<style>
+  /* Efecto hover para las tarjetas */
+  .card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  .card:hover {
+    transform: translateY(-10px) scale(1.05);
+    box-shadow: 0 8px 20px rgba(228, 28, 27, 0.4);
+    z-index: 10;
+  }
+
+  /* Botón rojo Coca-Cola */
+  .btn-coca {
+    background-color: #E41A1C;
+    border-color: #E41A1C;
+    color: #fff;
+    transition: background-color 0.3s ease, border-color 0.3s ease;
+  }
+  .btn-coca:hover, .btn-coca:focus {
+    background-color: #B7151A;
+    border-color: #B7151A;
+    color: #fff;
+  }
+</style>
+
+<h3 class="text-center mb-4 text-danger fw-bold">
+  <i class="fas fa-tag"></i> Promociones
+</h3>
+
+<div class="d-flex flex-wrap justify-content-center gap-4">
+  <!-- Tarjetas existentes (3) -->
+  <div class="card" style="width: 18rem;">
+    <img src="https://storage.googleapis.com/preminens-slbu-p/pim/cc/cl/product-ecommerce-alta/EMR/8967.jpg" class="card-img-top" alt="Vasos Coca Cola de vidrio">
+    <div class="card-body">
+      <h5 class="card-title">$ 6.790</h5>
+      <p class="card-text">Vasos Coca-Cola Colores X 6</p>
+      <a href="https://embonor.micoca-cola.cl/products/vasos-coca-cola-colores-x-6-8967/" class="btn btn-coca">Ver</a>
+    </div>
+  </div>
+
+  <div class="card" style="width: 18rem;">
+    <img src="https://storage.googleapis.com/preminens-slbu-p/pim/cc/cl/product-ecommerce-alta/EMR/21350.jpg" class="card-img-top" alt="Bolsa+Bebida">
+    <div class="card-body">
+      <h5 class="card-title">$ 9.520</h5>
+      <p class="card-text">Coca-Cola Original Vidrio Retornable 24 X 237 Ml + Bolsa De Tela Micoca-Cola</p>
+      <a href="https://embonor.micoca-cola.cl/products/coca-cola-original-vidrio-retornable-24-x-237-ml-bolsa-de-tela-micoca-cola-21350/" class="btn btn-coca">Ver</a>
+    </div>
+  </div>
+
+  <div class="card" style="width: 18rem;">
+    <img src="https://storage.googleapis.com/preminens-slbu-p/pim/cc/cl/product-ecommerce-alta/EMR/8964.jpg" class="card-img-top" alt="Taka-Taka">
+    <div class="card-body">
+      <h5 class="card-title">$ 14.690</h5>
+      <p class="card-text">Mini Taca-Taca</p>
+      <a href="https://embonor.micoca-cola.cl/products/mini-taca-taca-8964/" class="btn btn-coca">Ver</a>
+    </div>
+  </div>
+</div>
+
+<!-- Segunda fila de tarjetas, centradas y con margen superior -->
+<div class="d-flex flex-wrap justify-content-center gap-4 mt-4">
+  <!-- Tarjeta 4 -->
+  <div class="card" style="width: 18rem;">
+    <img src="https://storage.googleapis.com/preminens-slbu-p/pim/cc/cl/product-ecommerce-alta/EMR/21352.jpg" class="card-img-top" alt="Producto 4">
+    <div class="card-body">
+      <h5 class="card-title">$ 11.040</h5>
+      <p class="card-text">Coca-Cola Sin Azúcar 6 X 350 Ml + Hielera Metálica Coca-Cola</p>
+      <a href="https://embonor.micoca-cola.cl/products/coca-cola-sin-azucar-6-x-350-ml-hielera-metalica-coca-cola-21352/" class="btn btn-coca">Ver</a>
+    </div>
+  </div>
+
+  <!-- Tarjeta 5 -->
+  <div class="card" style="width: 18rem;">
+    <img src="https://storage.googleapis.com/preminens-slbu-p/pim/cc/cl/product-ecommerce-alta/EMR/21354.jpg" class="card-img-top" alt="Producto 5">
+    <div class="card-body">
+      <h5 class="card-title">$ 6.620</h5>
+      <p class="card-text">Coca-Cola Original Retornable 2 Lt + Posa Vasos Coca-Cola Metal X 6</p>
+      <a href="https://embonor.micoca-cola.cl/products/coca-cola-original-retornable-2-lt-posa-vasos-coca-cola-metal-x-6-21354/" class="btn btn-coca">Ver</a>
+    </div>
+  </div>
+
+  <!-- Tarjeta 6 -->
+  <div class="card" style="width: 18rem;">
+    <img src="https://storage.googleapis.com/preminens-slbu-p/pim/cc/cl/product-ecommerce-alta/EMR/21351.jpg" class="card-img-top" alt="Producto 6">
+    <div class="card-body">
+      <h5 class="card-title">Coca-Cola Zero Azúcar Retornable 2 Lt + Bar Mat Coca-Cola</h5>
+      <p class="card-text">Producto Coca-Cola 6</p>
+      <a href="https://embonor.micoca-cola.cl/products/coca-cola-zero-azucar-retornable-2-lt-bar-mat-coca-cola-21351/" class="btn btn-coca">Ver</a>
+    </div>
+  </div>
+</div>
+
+{% endblock %}
+

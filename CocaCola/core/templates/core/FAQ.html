@@ -1,0 +1,101 @@
+{% extends 'core/base.html' %}
+
+{% block content %}
+
+<section class="container my-5 py-5 rounded shadow" style="background-color: #fff5f5;">
+  <h1 class="display-4 text-center text-danger fw-bold mb-4">Preguntas Frecuentes</h1>
+  <p class="lead text-center text-muted mb-5">
+    Encuentra respuestas a las preguntas más comunes sobre <strong>Coca-Cola</strong> y descubre más sobre la historia de tu bebida favorita.
+  </p>
+
+  <!-- Lista de preguntas frecuentes -->
+  <div class="accordion accordion-flush" id="faqAccordion">
+    <!-- Pregunta 1 -->
+    <div class="accordion-item border-0 mb-3 shadow-sm rounded">
+      <h2 class="accordion-header" id="headingOne">
+        <button class="accordion-button bg-white text-danger fw-bold" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+          ¿Cuál es la historia detrás de Coca-Cola?
+        </button>
+      </h2>
+      <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#faqAccordion">
+        <div class="accordion-body">
+          Coca-Cola fue creada en 1886 por el Dr. John S. Pemberton en Atlanta, Georgia. Originalmente formulada como un medicamento, pronto se transformó en la bebida refrescante que conocemos hoy. Desde entonces, Coca-Cola ha sido una de las marcas más icónicas a nivel mundial.
+        </div>
+      </div>
+    </div>
+
+    <!-- Pregunta 2 -->
+    <div class="accordion-item border-0 mb-3 shadow-sm rounded">
+      <h2 class="accordion-header" id="headingTwo">
+        <button class="accordion-button collapsed bg-white text-danger fw-bold" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+          ¿Qué ingredientes lleva Coca-Cola?
+        </button>
+      </h2>
+      <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#faqAccordion">
+        <div class="accordion-body">
+          Coca-Cola contiene agua carbonatada, azúcar, colorante caramelo, ácido fosfórico, cafeína, aromas naturales y citrato de sodio. Cada ingrediente contribuye al sabor y la textura refrescante de la bebida.
+        </div>
+      </div>
+    </div>
+
+    <!-- Pregunta 3 -->
+    <div class="accordion-item border-0 mb-3 shadow-sm rounded">
+      <h2 class="accordion-header" id="headingThree">
+        <button class="accordion-button collapsed bg-white text-danger fw-bold" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+          ¿Coca-Cola es segura para el consumo?
+        </button>
+      </h2>
+      <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#faqAccordion">
+        <div class="accordion-body">
+          Sí, Coca-Cola es segura para el consumo en las cantidades recomendadas. Sin embargo, se recomienda disfrutarla con moderación debido a su contenido de azúcar y cafeína.
+        </div>
+      </div>
+    </div>
+
+    <!-- Pregunta 4 -->
+    <div class="accordion-item border-0 mb-3 shadow-sm rounded">
+      <h2 class="accordion-header" id="headingFour">
+        <button class="accordion-button collapsed bg-white text-danger fw-bold" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+          ¿Existen versiones sin azúcar de Coca-Cola?
+        </button>
+      </h2>
+      <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#faqAccordion">
+        <div class="accordion-body">
+          Sí, Coca-Cola ofrece varias versiones sin azúcar, como Coca-Cola Zero y Coca-Cola Light, que mantienen el sabor característico con cero o pocas calorías para quienes buscan opciones más saludables.
+        </div>
+      </div>
+    </div>
+
+    <!-- Pregunta 5 -->
+    <div class="accordion-item border-0 mb-3 shadow-sm rounded">
+      <h2 class="accordion-header" id="headingFive">
+        <button class="accordion-button collapsed bg-white text-danger fw-bold" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+          ¿Dónde se fabrica Coca-Cola?
+        </button>
+      </h2>
+      <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive" data-bs-parent="#faqAccordion">
+        <div class="accordion-body">
+          Coca-Cola se fabrica en cientos de plantas embotelladoras alrededor del mundo. La fórmula se produce en la sede principal, pero la mezcla y el embotellado se realizan localmente para garantizar frescura y calidad.
+        </div>
+      </div>
+    </div>
+
+    <!-- Pregunta 6 -->
+    <div class="accordion-item border-0 mb-3 shadow-sm rounded">
+      <h2 class="accordion-header" id="headingSix">
+        <button class="accordion-button collapsed bg-white text-danger fw-bold" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
+          ¿Qué iniciativas de sostenibilidad tiene Coca-Cola?
+        </button>
+      </h2>
+      <div id="collapseSix" class="accordion-collapse collapse" aria-labelledby="headingSix" data-bs-parent="#faqAccordion">
+        <div class="accordion-body">
+          Coca-Cola está comprometida con la sostenibilidad ambiental, incluyendo el uso de envases reciclables, reducción del consumo de agua y apoyo a proyectos de reforestación, buscando reducir su huella ecológica global.
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+
+{% endblock %}
